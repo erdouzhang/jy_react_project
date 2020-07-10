@@ -1,0 +1,9 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.App, .el_wrapper {
+  margin: 0;
+  padding: 0
+}

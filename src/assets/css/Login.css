@@ -1,0 +1,22 @@
+.login_box {
+  margin: auto;
+  width: 450px;
+  min-height: 320px;
+  border: 1px solid #cccccc;
+  box-shadow: 3px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  text-align: center;
+  transform: translateY(50%)
+}
+
+.login_btn {
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    line-height: 35px;
+    outline: none;
+    cursor: pointer;
+    /* backgroun */
+}
