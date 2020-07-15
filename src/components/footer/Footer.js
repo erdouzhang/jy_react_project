@@ -3,9 +3,15 @@ import React, { Component, Fragment } from 'react';
 class Footer extends Component {
 
   render() {
+    let footer = {
+      "height":"35px",
+      "textAlign": "center",
+      "lineHeight": "35px",
+      "background": "rgb(126, 126, 126)"
+    };
     return (
-      <footer>
-         底部组件
+      <footer style={footer}>
+         版权信息
       </footer>
     );
   }

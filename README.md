@@ -136,6 +136,38 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 上传到github
 ```
-     .gitignor
-     
+    参考网址：https://blog.csdn.net/fragrant_no1/article/details/87288224
+
+```
+### web中使用rem
+
+```
+参考网址: https://blog.csdn.net/u013821237/article/details/80263685
+参考网址: https://www.cnblogs.com/liangxuru/p/6970629.html
+
+首先：用rem就是根据html的font-size，用em就是根据body的font-size
+
+bootstrap样式表，html {font-size:62.5%;}  body {font-size:14px;}
+
+
+一、那么如果你确定要使用rem单位，就按以下三个步骤来计算：
+
+1、确定基数：一般10px，自己记住就行，不用写进代码里
+
+2、html {font-size:百分数;}    百分数=基数/16  (存在误差)
+
+　　基数10    百分数62.5%
+
+　　基数14    百分数87.5%
+
+3、px换算rem   公式=想要的px值/基数
+
+　　也就是说，当你设置 html {font-size:62.5%;}，你想给容器里的文字设置字号14px，换算成rem就是14px/10——1.4rem 
+
+ 
+
+二、如果使用em单位的时候，计算机就会自己去找你body的设置，才不会管你html是如何设置的呢
+
+比如我们伟大的bootstrap给 body {font-size:14px;} 这样设置后，如果我想要一个14px的外边距，我就用14px/14px——1em 这样啦。
+
 ```

@@ -1,0 +1,38 @@
+.body_wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+.el_items {
+  background: rgba(128,128,128,.6);
+}
+
+.el_leftBox {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.left_item, .right_item{
+  flex-grow: 1;
+  margin: 5px;
+  border: 1px solid #000000
+}
+
+.el_middleBox {
+   flex-grow: 2;
+   margin: 0 8px;
+}
+
+.el_rightBox {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}

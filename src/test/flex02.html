@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>flex-02</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+    .flexbox {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      background-color: green;
+    }
+
+    .flexbox-child {
+      align-items: stretch;
+      /* // height：100％; uncommenting 这将使它工作 */
+      background-color: blue;
+    }
+
+    .flexbox-grand-child {
+      height: 100%;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flexbox">
+    <div class="flexbox-child">
+      <div class="flexbox-grand-child">
+         高度100%占比
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

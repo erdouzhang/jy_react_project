@@ -59,7 +59,7 @@ class Login extends React.Component {
                storageInfo.setItem("store_info", JSON.stringify(data));
                // 跳回主页面
                // 成功后路由跳转
-                _this.props.history.push({ pathname:'index' });
+                _this.props.history.push({ pathname:'/index/view_screen' });
            }
        } else {
          this.setState({

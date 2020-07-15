@@ -5271,6 +5271,18 @@ globby@^6.1.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
+gojs-react@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npm.taobao.org/gojs-react/download/gojs-react-1.0.7.tgz#8334bc30b21ce0836c183fec240f298a9218c6a9"
+  integrity sha1-gzS8MLIc4INsGD/sJA8pipIYxqk=
+  dependencies:
+    tslib "^1.11.2"
+
+gojs@^2.1.20:
+  version "2.1.20"
+  resolved "https://registry.npm.taobao.org/gojs/download/gojs-2.1.20.tgz#e30e404c83cbcf78bd1600112dee8371fa73ec3c"
+  integrity sha1-4w5ATIPLz3i9FgARLe6Dcfpz7Dw=
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
@@ -10621,6 +10633,11 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/ts-pnp/download/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha1-pQCtCEsHmPHDBxrzkeZZEshrypI=
+
+tslib@^1.11.2:
+  version "1.13.0"
+  resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
+  integrity sha1-yIHhPMcBWJTtkUhi0nZDb6mkcEM=
 
 tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"

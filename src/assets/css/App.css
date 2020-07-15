@@ -1,9 +1,26 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
 body {
   margin: 0 auto;
   padding: 0;
   position: relative;
+  height: 100%;
+  font-size: 1.5rem;
+}
+#root {
+  height: 100%;
 }
 .App, .el_wrapper {
   margin: 0;
-  padding: 0
+  padding: 0;
+  height: 100%;
 }
+
+.diagram-component {
+   width: 1366px;
+   height: 700px;
+   border: solid 1px black;
+   background-color: white;
+ }
