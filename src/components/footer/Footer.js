@@ -10,9 +10,11 @@ class Footer extends Component {
       "background": "rgb(126, 126, 126)"
     };
     return (
-      <footer style={footer}>
-         版权信息
-      </footer>
+      <Fragment>
+        <footer style={footer}>
+           版权信息
+        </footer>
+      </Fragment>
     );
   }
 }

@@ -13,14 +13,16 @@ class Index extends Component {
     }
     render() {
       return  (
-        <div className="el_wrapper">
-           { /**导航栏**/ }
-            <Navbar route={this}/>
-           { /**主体内容**/}
-           <Container />
-           {/**底部组件**/}
-           <Footer />
-        </div>
+        <Fragment>
+          <div className="el_wrapper">
+             { /**导航栏**/ }
+              <Navbar route={this}/>
+             { /**主体内容**/}
+             <Container />
+             {/**底部组件**/}
+             <Footer />
+          </div>
+        </Fragment>
       );
     }
 }

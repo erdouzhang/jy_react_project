@@ -1,15 +1,16 @@
 .body_wrapper {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
 }
+
 .el_items {
-  background: rgba(128,128,128,.6);
+  background: rgba(128, 128, 128, .6);
 }
 
 .el_leftBox {
@@ -19,15 +20,15 @@
   flex-wrap: nowrap;
 }
 
-.left_item, .right_item{
+.left_item, .right_item {
   flex-grow: 1;
   margin: 5px;
   border: 1px solid #000000
 }
 
 .el_middleBox {
-   flex-grow: 2;
-   margin: 0 8px;
+  flex-grow: 2;
+  margin: 0 8px;
 }
 
 .el_rightBox {
@@ -35,4 +36,39 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+
+/* 左右分栏 */
+.menu_left {
+  flex-grow: 1;
+  border: 1px solid red
+}
+
+.content_wrapper {
+  flex-grow: 6;
+  border: 1px solid yellow
+}
+
+.menuBox>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menuBox>ul>li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 40px;
+  line-height: 40px
+}
+
+.menuBox>ul>li:hover {
+  background-color: rgba(120, 120, 120, 0.8);
+  transition: all .8s ease;
+}
+
+/* 菜单激活状态 */
+.activeItem {
+  background-color: rgba(120, 120, 120, 0.8)
 }

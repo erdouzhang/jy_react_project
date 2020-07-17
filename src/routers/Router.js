@@ -7,6 +7,7 @@ import View_Screen from '../components/container/View_Screen';
 import Topology from '../components/container/Topology';
 import AreaMonitoring from '../components/container/Area_Monitoring';
 import SystemSetting from '../components/container/System_Setting';
+import Table from '../components/table/Table';
 
 // import Message from '../components/Message';
 
@@ -16,5 +17,6 @@ export {
    View_Screen,
    Topology,
    AreaMonitoring,
-   SystemSetting
+   SystemSetting,
+   Table
 };

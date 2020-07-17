@@ -17,12 +17,14 @@ class Login extends React.Component {
     }
 
     login() {
+
       // 表单验证
       let userName = this.state.userName;
       let password = this.state.password;
       let _this = this;
 
       if(userName == '' || userName == null ||  password == "" || password == null) {
+
             let clearTimer = null;
             this.setState({
               "messageFlag": true,
@@ -32,7 +34,7 @@ class Login extends React.Component {
            clearTimer = setTimeout(() => {
                 this.setState({
                    "messageFlag": !this.state.messageFlag
-                });
+                  });
           }, 3000);
           return false;
       }
@@ -89,43 +91,16 @@ class Login extends React.Component {
     render(){
       return (
           <>
-          <section className="login_wrapper">
-            <div className="login_items">
-              <div className="login_center_box items_bg_left">
-                  <div className="login_title"></div>
-                  <div className="login_line"></div>
-                  <div className="login_text">Distribution Monitoring System</div>
-              </div>
-              <div className="login_center_box items_bg_right">
-                  <div className="login_welcome items_from">欢迎用户登录系统</div>
-                  <div className="items_from">
-                       <div className="layui-form-item">
-                         <label className="layadmin-user-login-icon layui-icon layui-icon-username" htmlFor="LAY-user-login-username"></label>
-                         <input ref="userName" type="text" name="username" id="user-login-username" placeholder="请输入用户名" className="layui-input" onChange={this.formUserChange.bind(this)} />
-                       </div>
-
-                  </div>
-                  <div className="items_from">
-                    <div className="layui-form-item">
-                      <label className="layadmin-user-login-icon layui-icon layui-icon-username" htmlFor="password"></label>
-                      <input ref="password" type="password" name="password" id="user-login-password" placeholder="请输入密码" className="layui-input" onChange={this.formPassword.bind(this)} />
-                    </div>
-                  </div>
-                  <div className="items_from">
-                      <div className="login_forget">
-                        <span>
-                          <input type="checkbox" id="checkbox_a1" className="chk_1" value="记住密码"/>
-                          <label htmlFor="checkbox_a1" ></label> 记住密码
-                        </span>
-                        <span className="forget_password_title">忘记密码?</span>
-                      </div>
-                  </div>
-                  <div className="items_from">
-                      <p><button type="button" className="login_btn" id="loginBtn" onClick={this.login.bind(this)}>登录</button></p>
-                  </div>
-              </div>
-            </div>
-          </section>
+          <div className="login_box">
+              <h3>电力平台</h3>
+              <section className="login_form">
+                   <form>
+                        <p><label>用户名:</label><input ref="userName" type="text" onChange={this.formUserChange.bind(this)} /></p>
+                        <p><label>密&nbsp;&nbsp;&nbsp;码:</label><input ref="password" type="password" onChange={this.formPassword.bind(this)} /></p>
+                   </form>
+              </section>
+              <button className="login_btn" type="button" onClick={this.login.bind(this)}>登录</button>
+          </div>
            {this.state.messageFlag ? <Message title={this.state.msg} showFlag={ this.state.messageFlag } /> : null}
           </>
       );
