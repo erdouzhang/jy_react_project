@@ -1,13 +1,13 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 
 class Table extends Component{
     constructor(...args) {
       super(...args);
+      console.log(this.props);
     }
     render() {
       return (
-
-        <table border="0" style={{"width": "100%","text-align":"center"}}>
+        <table border="0" style={{"width": "100%","textAlign":"center"}}>
             <thead>
                 <tr>
                     <th>字段</th>
@@ -67,7 +67,7 @@ class Table extends Component{
                  </tr>
             </tbody>
         </table>
-     
+
       );
     }
 }

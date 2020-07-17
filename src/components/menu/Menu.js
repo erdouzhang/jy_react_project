@@ -15,7 +15,7 @@ class Menu extends Component {
                   <ul>
                       {
                         this.props.dataMenuList.map((items) => {
-                           return <li key={items.key}><Link to="/table">{items.text}</Link></li>
+                           return <li key={items.key}><Link to={`${items.path}`}>{items.text}</Link></li>
                         })
                       }
 

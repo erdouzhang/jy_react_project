@@ -9,10 +9,10 @@ function App() {
     <Router>
       <div className="App">
          <Route path="/" exact component={Login}></Route>
-         <Route path="/index/view_screen" exact component={ Index }></Route>
-         <Route path="/index/topology" exact component={ Index }></Route>
-         <Route path="/index/area_monitoring" exact component={ Index }></Route>
-         <Route path="/index/system_setting" exact component={ Index }></Route>
+         <Route path="/view_screen" exact component={ Index }></Route>
+         <Route path="/topology" exact component={ Index }></Route>
+         <Route path="/area_monitoring" component={ Index }></Route>
+         <Route path="/system_setting" component={ Index }></Route>
       </div>
     </Router>
   );

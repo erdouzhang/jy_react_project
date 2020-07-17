@@ -3,9 +3,7 @@ import Navbar from './nav/Navbar';
 import Container from './container/Container';
 // import Topology from './container/Topology';
 import Footer from './footer/Footer';
-
-import { BrowserRouter as Router,  Route, Switch } from "react-router-dom";
-
+// import { BrowserRouter as Router,  Route, Switch } from "react-router-dom";
 class Index extends Component {
 
     constructor(...args){

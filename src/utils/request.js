@@ -1,6 +1,6 @@
 // https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch
 const config = {
-    // urlPath:'http://192.168.2.118:9090/jy',
+    // urlPath:'http://192.168.2.118:9090/jy'
     urlPath:'/jy'
 };
 const requestService = {

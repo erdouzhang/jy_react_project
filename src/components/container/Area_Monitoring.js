@@ -1,7 +1,8 @@
 import React, {Component,Fragment} from 'react';
-import { BrowserRouter as Router, Switch,  Route, useParams, useRouteMatch } from "react-router-dom";
+import { Switch,  Route} from "react-router-dom";
 import Menu from '../menu/Menu';
-import Table from '../table/Table';
+import WrapperTable from '../table/WrapperTable';
+
 
 // import '../../assets/css/Contanier.css';
 class AreaMonitoring extends Component {
@@ -11,13 +12,16 @@ class AreaMonitoring extends Component {
     this.state= {
       menuList:[{
           "key": 1,
-          "text": "首页"
+          "text": "首页",
+          "path": "/area_monitoring/table"
       },{
         "key": 2,
-        "text": "菜单1"
+        "text": "菜单1",
+        "path": "/area_monitoring/test1"
       }, {
         "key": 3,
-        "text": "菜单2"
+        "text": "菜单2",
+        "path": "/area_monitoring/test2"
       }]
     }
   }
@@ -28,11 +32,13 @@ class AreaMonitoring extends Component {
                 <div className="menu_left">
                     <Menu dataMenuList={this.state.menuList} />
                 </div>
-
                  <div className="content_wrapper">
-                   <Table />
+                   <Switch>
+                        <Route path="/area_monitoring/table" component={ WrapperTable } key="a" />
+                        <Route path="/area_monitoring/test1" component={ WrapperTable } key="b" />
+                        <Route path="/area_monitoring/test2" component={ WrapperTable } key="c" />
+                   </Switch>
                  </div>
-
            </section>
        </Fragment>
      );
