@@ -10,6 +10,12 @@ class WrapperTable extends Component {
   }
   render() {
     let { pathname } = this.props.location;
+  
+    {
+       /**
+      跟路由配置传递不同的参数
+      **/  }
+
      return (
        <Fragment>
           <Search />

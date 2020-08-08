@@ -3,7 +3,20 @@ import React, {Component} from 'react';
 class Table extends Component{
     constructor(...args) {
       super(...args);
-      console.log(this.props);
+      // console.log(this.props.url);
+
+       {
+         /**
+         表头数据
+         **/
+       }
+
+      this.state= {
+        colArray:['序号','']
+      }
+
+
+
     }
     render() {
       return (

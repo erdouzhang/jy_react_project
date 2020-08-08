@@ -8,6 +8,9 @@ body {
   position: relative;
   height: 100%;
   font-size: 1.5rem;
+  background: url('../images/index_bg.png') no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
 }
 #root {
   height: 100%;
@@ -21,6 +24,11 @@ body {
 .diagram-component {
    width: 1366px;
    height: 700px;
-   border: solid 1px black;
-   background-color: white;
+   /* border: solid 1px black; */
+   background-color: none;
  }
+
+
+canvas {
+  outline: none
+}

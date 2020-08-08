@@ -1,0 +1,9 @@
+/* 查询条件 */
+.table_search {
+  display: flex;
+  justify-content:flex-start;
+  flex-flow: row;
+  height: 60px;
+  line-height: 60px;
+  /* border: 1px solid gray */
+}
