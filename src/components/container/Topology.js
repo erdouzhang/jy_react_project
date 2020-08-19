@@ -184,12 +184,12 @@ class Topology extends Component {
                 {
                     key: 3,
                     images:"../../assets/images/Root_dev.png",
-                    question: "设备"
+                    question: "设备1"
                 },
                 {
                     key: 4,
                     images:"../../assets/images/Root_dev.png",
-                    question: "设备"
+                    question: "设备1"
                 },
                 {
                     key: 5,
@@ -285,7 +285,7 @@ class Topology extends Component {
                 from: 1,
                 to: 2,
                 color:"black",
-                width: 2,
+                width: 3,
                 // answer: 20,
                 answer: "A相",
                 phase:"A相"
@@ -294,7 +294,7 @@ class Topology extends Component {
                     from: 1,
                     to: 3,
                     color:"red",
-                    width: 2,
+                    width: 3,
                     answer: 2,
                     phase:"A相"
                 },
@@ -302,7 +302,7 @@ class Topology extends Component {
                     from: 1,
                     to: 4,
                     color:"gray",
-                    width: 2,
+                    width: 3,
                     answer: "C相",
                     phase:"A相"
                 },

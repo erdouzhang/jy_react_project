@@ -40,7 +40,9 @@
 
 /* 左右分栏 */
 .menu_left {
-  flex-grow: 1;
+  width: 200px;
+  min-width: 180px
+  /* flex-grow: 1; */
   /* border: 1px solid red */
 }
 
@@ -78,3 +80,8 @@
   /* background-image: url('../images/index_bg.png') no-repeat;
   background-size: 100% 100% */
 }
+
+
+/* .table_wrapper {
+  border: 1px solid #cccccc
+} */
